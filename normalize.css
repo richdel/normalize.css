@@ -422,3 +422,14 @@ textarea {
 optgroup {
   font-weight: bold;
 }
+
+/**
+ * Labels wrapping form elements containing images break ability to select
+ * form element in IE 11
+ */
+label {
+  display: inline-block;
+}
+label img {
+  pointer-events: none;
+}
